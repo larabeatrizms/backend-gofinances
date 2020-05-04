@@ -1,7 +1,11 @@
 import Transaction from '../models/Transaction';
 
+interface Request {
+  fileName: string;
+  path: string;
+}
 class ImportTransactionsService {
-  async execute(): Promise<Transaction[]> {
+  async execute({ fileName, path }: Request): Promise<Transaction[]> {
     // TODO
   }
 }
