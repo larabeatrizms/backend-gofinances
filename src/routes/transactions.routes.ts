@@ -58,12 +58,12 @@ transactionsRouter.post(
 
     const importTransaction = new ImportTransactionsService();
 
-    const transaction = await importTransaction.execute({
+    const transactions = await importTransaction.execute({
       fileName: request.file.filename,
-      path: uploadConfig.directory,
     });
+    // console.log(categories);
 
-    return response.json(transaction);
+    return response.json(transactions);
   },
 );
 
