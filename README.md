@@ -1,21 +1,21 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="https://hotmart.s3.amazonaws.com/product_pictures/6bd576fb-5d9f-4c15-b59d-482ff6a26cbe/GO1.png" alt="Desafio fundamentos Node.js"></a>
+ <img width=200px height=200px src="./src/assets/logo.svg" alt="GoFinances"></a>
 </p>
 
-<h3 align="center">Desafio Database upload</h3>
+<h3 align="center">Backend GoFinances</h3>
 
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
 
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/larabeatrizms/desafio-database-upload">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/larabeatrizms/backend-gofinances">
 
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/larabeatrizms/desafio-database-upload">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/larabeatrizms/backend-gofinances">
 
-  <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/larabeatrizms/desafio-database-upload">
+  <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/larabeatrizms/backend-gofinances">
 
-  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/larabeatrizms/desafio-database-upload">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/larabeatrizms/backend-gofinances">
 
 <!-- [![GitHub Issues](https://img.shields.io/github/issues/larabeatrizms/desafio-fundamentos-nodejs.svg)](https://github.com/larabeatrizms/desafio-fundamentos-nodejs/issues)
 [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/larabeatrizms/desafio-fundamentos-nodejs.svg)](https://github.com/larabeatrizms/desafio-fundamentos-nodejs/pulls) -->
@@ -41,15 +41,16 @@
 
 ## 🧐 Sobre <a name = "about"></a>
 
-Projeto contruído para patricar conhecimentos em Node.js e Banco de dados relacional(Postgres). Essa é uma aplicação que deve armazenar transações financeiras de entrada e saída e permitir o cadastro e a listagem dessas transações, além de permitir a criação de novos registros no banco de dados a partir do envio de um arquivo csv.
+Projeto contruído para praticar conhecimentos em Node.js e Banco de dados relacional(Postgres). Essa é uma aplicação que deve armazenar transações financeiras de entrada e saída e permitir o cadastro e a listagem dessas transações, além de permitir a criação de novos registros no banco de dados a partir do envio de um arquivo csv.
 
 ### 🚀 Sobre o desafio
 
-Nesse desafio, você deve continuar desenvolvendo a aplicação de gestão de transações, treinando o que você aprendeu até agora no Node.js junto ao TypeScript, mas dessa vez incluindo o uso de banco de dados com o TypeORM e envio de arquivos com o Multer!
+Nesse desafio, você deve desenvolver a aplicação de gestão de transações, treinando o que você aprendeu até agora no Node.js junto ao TypeScript, mas dessa vez incluindo o uso de banco de dados com o TypeORM e envio de arquivos com o Multer!
 
 Descrição completa sobre o desafio, [acessar descrição](https://github.com/Rocketseat/bootcamp-gostack-desafios/tree/master/desafio-database-upload)
 
 ## 🏁 Iniciando <a name = "getting_started"></a>
+
 ### Rotas da Aplicação
 
 - **`POST /transactions`**: A rota deve receber `title`, `value`, `type`, e `category` dentro do corpo da requisição, sendo o `type` o tipo da transação, que deve ser `income` para entradas (depósitos) e `outcome` para saídas (retiradas). Ao cadastrar uma nova transação, ela deve ser armazenada dentro do seu banco de dados, possuindo os campos `id`, `title`, `value`, `type`, `category_id`, `created_at`, `updated_at`.
@@ -59,7 +60,6 @@ Descrição completa sobre o desafio, [acessar descrição](https://github.com/R
 - **`DELETE /transactions/:id`**: A rota deve deletar uma transação com o `id` presente nos parâmetros da rota;
 
 * **`POST /transactions/import`**: A rota deve permitir a importação de um arquivo com formato `.csv` contendo as mesmas informações necessárias para criação de uma transação `id`, `title`, `value`, `type`, `category_id`, `created_at`, `updated_at`, onde cada linha do arquivo CSV deve ser um novo registro para o banco de dados, e por fim retorne todas as `transactions` que foram importadas para seu banco de dados. O arquivo csv, deve seguir o seguinte [modelo](./assets/file.csv)
-
 
 ## 🚀 Preview<a name = "preview"></a>
 
@@ -82,7 +82,6 @@ ou
 ```sh
 npm install
 ```
-
 
 ## 🔧 Executando os testes <a name = "tests"></a>
 
@@ -130,7 +129,6 @@ yarn dev:server
 
 👤 **Lara Beatriz**
 
-* Twitter: [@LaraBeatrizMS](https://twitter.com/LaraBeatrizMS)
-* Github: [@larabeatrizms](https://github.com/larabeatrizms)
-* LinkedIn: [@larabeatrizms](https://linkedin.com/in/larabeatrizms)
-
+- Twitter: [@LaraBeatrizMS](https://twitter.com/LaraBeatrizMS)
+- Github: [@larabeatrizms](https://github.com/larabeatrizms)
+- LinkedIn: [@larabeatrizms](https://linkedin.com/in/larabeatrizms)

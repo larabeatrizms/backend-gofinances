@@ -1,9 +1,4 @@
-import {
-  MigrationInterface,
-  QueryRunner,
-  Table,
-  TableForeignKey,
-} from 'typeorm';
+import { MigrationInterface, QueryRunner, Table } from 'typeorm';
 
 export default class CreateTransaction1588615874318
   implements MigrationInterface {
